@@ -38,7 +38,7 @@ const GRID_SEED: Grid = generateRandomGrid(
 );
 
 // when to stop
-const RUN_LIMIT = 5;
+const RUN_LIMIT = 500;
 // remove the terminal cursor so the grid renders nicely
 stdout.write('\x1b[?25l');
 
