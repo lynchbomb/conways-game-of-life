@@ -3,7 +3,7 @@ import type { Grid, CellCharState, Coords } from './types';
 // generate a random grid based on a set dimension and random alive/dead cells
 export function generateRandomGrid(
   dimensions: [number, number],
-  chars: CellCharState = ['▄', '_']
+  chars: CellCharState = ['▄', ' ']
 ): Grid {
   const grid: Grid = [];
 
