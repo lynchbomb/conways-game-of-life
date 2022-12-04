@@ -1,17 +1,14 @@
 module.exports = {
   root: true,
-  parser: '@typescript-eslint/parser',
+  parser: '@babel/eslint-parser',
   parserOptions: {
     sourceType: 'module',
   },
-  plugins: ['@typescript-eslint', 'import', 'prettier', 'filenames'],
+  plugins: ['import', 'prettier', 'filenames'],
   extends: [
     'eslint:recommended',
     'plugin:prettier/recommended',
     'prettier',
-    'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:import/typescript',
     'plugin:import/recommended',
   ],
   rules: {
@@ -26,7 +23,7 @@ module.exports = {
     'import/order': [
       'error',
       {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object', 'type'],
+        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
       },
     ],
     'prettier/prettier': [
@@ -39,23 +36,7 @@ module.exports = {
       {
         usePrettierrc: false,
       },
-    ],
-    '@typescript-eslint/no-use-before-define': [
-      'error',
-      {
-        functions: false,
-      },
-    ],
-    '@typescript-eslint/interface-name-prefix': ['off'],
-    '@typescript-eslint/explicit-function-return-type': [
-      'error',
-      {
-        allowExpressions: true,
-        allowTypedFunctionExpressions: true,
-        allowHigherOrderFunctions: true,
-      },
-    ],
-    '@typescript-eslint/no-non-null-assertion': ['off'],
+    ]
   },
   ignorePatterns: ['dist', 'node_modules', 'fixtures', '*.config.*'],
 };
