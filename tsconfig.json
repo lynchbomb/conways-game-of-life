@@ -14,7 +14,7 @@
     "resolveJsonModule": true,
     "sourceMap": true,
     "strict": true,
-    "target": "es2017",
+    "target": "ES2021",
     "skipLibCheck": true,
     "outDir": "dist"
   }

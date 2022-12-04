@@ -14,7 +14,6 @@
   "settings": {
     "files.exclude": {
       "**/node_modules/**": true,
-      "**/lib/**": true,
       "**/dist/**": true
     },
     "typescript.tsdk": "node_modules/typescript/lib",
